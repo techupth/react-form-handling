@@ -4,10 +4,7 @@ import ProductForm from './src/components/ProductForm.jsx'
 
 test('render ProductForm to check alert', () => {
     render(<ProductForm />)
-    screen.debug
-
     const code = ProductForm.toString();
-
     const expectedText = 'alert(`{\n"name": "${name}",\n"price": ${price},\n "image": "${image}",\n "description": "${description}"\n}`)'
     const expectedText2 = 'alert(`"name": ${name} "price": ${price} "image": ${image} "description": ${description}`)'
 
@@ -22,7 +19,6 @@ test('render ProductForm to check alert', () => {
 
 test('render ProductForm to check onChange', () => {
     render(<ProductForm />)
-
     const code = ProductForm.toString()
     const expectText = 'event.target.value'
     const expectText1 = 'e.target.value'
