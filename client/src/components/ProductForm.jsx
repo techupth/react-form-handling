@@ -1,16 +1,6 @@
-import { useState } from "react";
-
 function ProductForm() {
-  const [name, setName] = useState("")
-  const [image, setImage] = useState("")
-  const [price, setPrice] = useState("")
-  const [description, setDescription] = useState("")
-  function handleSubmit(event) {
-    event.preventDefault();
-    alert(`"name": ${name} "price": ${price} "image": ${image} "description": ${description}`)
-  }
   return (
-    <form className="post-form" onSubmit={handleSubmit}>
+    <form className="post-form">
       <h1>Create Product Form</h1>
       <div className="input-container">
         <label>
@@ -20,8 +10,7 @@ function ProductForm() {
             name="name"
             type="text"
             placeholder="Enter name here"
-            value={name}
-            onChange={(event) => setName(event.target.value)}
+            onChange={() => { }}
           />
         </label>
       </div>
@@ -33,8 +22,7 @@ function ProductForm() {
             name="image"
             type="text"
             placeholder="Enter image url here"
-            value={image}
-            onChange={(event) => setImage(event.target.value)}
+            onChange={() => { }}
           />
         </label>
       </div>
@@ -46,8 +34,7 @@ function ProductForm() {
             name="price"
             type="number"
             placeholder="Enter price here"
-            value={price}
-            onChange={(event) => setPrice(event.target.value)}
+            onChange={() => { }}
           />
         </label>
       </div>
@@ -59,8 +46,7 @@ function ProductForm() {
             name="description"
             type="text"
             placeholder="Enter description here"
-            value={description}
-            onChange={(event) => setDescription(event.target.value)}
+            onChange={() => { }}
             rows={4}
             cols={30}
           />
@@ -73,4 +59,4 @@ function ProductForm() {
   );
 }
 
-export default ProductForm; 
+export default ProductForm;

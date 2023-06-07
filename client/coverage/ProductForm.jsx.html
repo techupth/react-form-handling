@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">96.05% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>73/76</span>
+                <span class='fraction'>62/62</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">16.66% </span>
+                <span class="strong">20% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/6</span>
+                <span class='fraction'>1/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">96.05% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>73/76</span>
+                <span class='fraction'>62/62</span>
             </div>
         
             
@@ -124,35 +124,7 @@
 <a name='L59'></a><a href='#L59'>59</a>
 <a name='L60'></a><a href='#L60'>60</a>
 <a name='L61'></a><a href='#L61'>61</a>
-<a name='L62'></a><a href='#L62'>62</a>
-<a name='L63'></a><a href='#L63'>63</a>
-<a name='L64'></a><a href='#L64'>64</a>
-<a name='L65'></a><a href='#L65'>65</a>
-<a name='L66'></a><a href='#L66'>66</a>
-<a name='L67'></a><a href='#L67'>67</a>
-<a name='L68'></a><a href='#L68'>68</a>
-<a name='L69'></a><a href='#L69'>69</a>
-<a name='L70'></a><a href='#L70'>70</a>
-<a name='L71'></a><a href='#L71'>71</a>
-<a name='L72'></a><a href='#L72'>72</a>
-<a name='L73'></a><a href='#L73'>73</a>
-<a name='L74'></a><a href='#L74'>74</a>
-<a name='L75'></a><a href='#L75'>75</a>
-<a name='L76'></a><a href='#L76'>76</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<a name='L62'></a><a href='#L62'>62</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
@@ -213,19 +185,9 @@
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">import { useState } from "react";
-&nbsp;
-function ProductForm() {
-  const [name, setName] = useState("")
-  const [image, setImage] = useState("")
-  const [price, setPrice] = useState("")
-  const [description, setDescription] = useState("")
-<span class="fstat-no" title="function not covered" >  function handleSubmit(event) {</span>
-<span class="cstat-no" title="statement not covered" >    event.preventDefault();</span>
-<span class="cstat-no" title="statement not covered" >    alert(`"name": ${name} "price": ${price} "image": ${image} "description": ${description}`)</span>
-<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">function ProductForm() {
   return (
-    &lt;form className="post-form" onSubmit={handleSubmit}&gt;
+    &lt;form className="post-form"&gt;
       &lt;h1&gt;Create Product Form&lt;/h1&gt;
       &lt;div className="input-container"&gt;
         &lt;label&gt;
@@ -235,8 +197,7 @@ function ProductForm() {
             name="name"
             type="text"
             placeholder="Enter name here"
-            value={name}
-            onChange={<span class="fstat-no" title="function not covered" >(event) =&gt; setName(event.target.value)}</span>
+            onChange={<span class="fstat-no" title="function not covered" >() =&gt; { }}</span>
           /&gt;
         &lt;/label&gt;
       &lt;/div&gt;
@@ -248,8 +209,7 @@ function ProductForm() {
             name="image"
             type="text"
             placeholder="Enter image url here"
-            value={image}
-            onChange={<span class="fstat-no" title="function not covered" >(event) =&gt; setImage(event.target.value)}</span>
+            onChange={<span class="fstat-no" title="function not covered" >() =&gt; { }}</span>
           /&gt;
         &lt;/label&gt;
       &lt;/div&gt;
@@ -261,8 +221,7 @@ function ProductForm() {
             name="price"
             type="number"
             placeholder="Enter price here"
-            value={price}
-            onChange={<span class="fstat-no" title="function not covered" >(event) =&gt; setPrice(event.target.value)}</span>
+            onChange={<span class="fstat-no" title="function not covered" >() =&gt; { }}</span>
           /&gt;
         &lt;/label&gt;
       &lt;/div&gt;
@@ -274,8 +233,7 @@ function ProductForm() {
             name="description"
             type="text"
             placeholder="Enter description here"
-            value={description}
-            onChange={<span class="fstat-no" title="function not covered" >(event) =&gt; setDescription(event.target.value)}</span>
+            onChange={<span class="fstat-no" title="function not covered" >() =&gt; { }}</span>
             rows={4}
             cols={30}
           /&gt;
@@ -288,14 +246,14 @@ function ProductForm() {
   );
 }
 &nbsp;
-export default ProductForm; </pre></td></tr></table></pre>
+export default ProductForm;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-05-26T02:59:02.033Z
+                at 2023-06-07T03:50:05.600Z
             </div>
         <script src="prettify.js"></script>
         <script>
